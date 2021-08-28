@@ -1,0 +1,158 @@
+@font-face {
+    font-family:"Vazir" ;
+    src:url("../font/Vazir-Thin-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-Thin-FD-WOL.woff") format("woff"),
+    url("../font/Vazir-Thin-FD-WOL.woff2") format("woff2"),
+    url("../font/Vazir-Light-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-Light-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-Light-FD-WOL.woff") format("woff"),
+    url("../font/Vazir-Light-FD-WOL.woff2") format("woff2"),
+    url("../font/Vazir-Medium-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url("../font/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+    url("../font/Vazir-Bold-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-Bold-FD-WOL.woff") format("woff"),
+    url("../font/Vazir-Bold-FD-WOL.woff2") format("woff2"),
+    url("../font/Vazir-FD-WOL.ttf") format("truetype"),
+    url("../font/Vazir-FD-WOL.woff") format("woff"),
+    url("../font/Vazir-FD-WOL.woff2") format("woff2");
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"vazir",Serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url("../img/crane-678609_1920.jpg");
+    background-size:cover;
+}
+/*
+Main-section
+*/
+.container-main-section{
+    width:100%;
+    max-width:100%;
+    height:auto;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-section{
+    width:30%;
+    height:250px;
+    background-color:whitesmoke;
+    opacity:0.92;
+    margin-top:155px;
+    border-radius: 30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.done-icon{
+    font-size:45px;
+    color:lightseagreen;
+}
+.success-message{
+    font-size:21px;
+    font-weight:bold;
+   padding:25px 30px 15px;
+}
+.madarek-message{
+    font-size:17px;
+    font-weight:bold;
+    padding-bottom:25px;
+}
+.turn-back{
+   color:darkblue;
+   font-size:19px;
+   font-weight: bold;
+}
+.turn-back-icon{
+   font-size:21.5px;
+}
+.turn-back:hover{
+    color:purple;
+    padding:10px;
+    border:1px solid gray;
+    border-radius: 10px;
+}
+
+/*
+@Media-query(Main-section)
+*/
+@media only screen and (max-width:374px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:80%;
+    }
+    .success-message{
+        font-size:19px;
+    }
+    .madarek-message{
+        font-size:14px;
+    }
+}
+@media only screen and (min-width:375px) and (max-width:480px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:80%;
+    }
+    .success-message{
+        font-size:21px;
+    }
+    .madarek-message{
+        font-size:15px;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:600px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:70%;
+    }
+    .madarek-message{
+        font-size:17px;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:769px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:60%;
+    }
+}
+@media only screen and (min-width:770px) and (max-width:950px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:50%;
+    }
+}
+@media only screen and (min-width:951px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:40%;
+    }
+}
+@media only screen and (min-width:1040px){
+    .container-main-section{
+        width:100%;
+    }
+    .main-section{
+        width:30%;
+    }
+}
